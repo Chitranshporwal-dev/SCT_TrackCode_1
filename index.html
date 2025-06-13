@@ -3,31 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Landing Page</title>
+  <title>CodeFlex Coding Courses</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header class="navbar" id="navbar">
+  <header id="navbar">
     <div class="logo">
-    <img src="codeflex-logo.png" alt="Logo" class="logo-img" />
+      <img src="codeflex-logo.png" alt="Logo" class="logo-img" />
     <span>CodeFlex</span>
     </div>
-    <ul class="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#setting">Setting</a></li>
-      <li><a href="#sign up">Sign Up</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="home">Home Section</section>
-  <section id="about">About Section</section>
-  <section id="services">Services Section</section>
-  <section id="contact">Contact Section</section>
-  <section id="setting">Setting Section</section>
+  <section id="home" class="section">
+    <div class="content">
+      <h1>Welcome to CodeFlex</h1>
+      <p>Master coding with our expert-led courses.</p>
+    </div>
+  </section>
+
+  <section id="courses" class="section">
+    <div class="content">
+      <h1>Our Courses</h1>
+      <div class="courses-grid">
+        <div class="course-card">
+          <h2>Web Development</h2>
+          <p>HTML, CSS, JavaScript, React and more.</p>
+        </div>
+        <div class="course-card">
+          <h2>Python Programming</h2>
+          <p>From basics to advanced Python projects.</p>
+        </div>
+        <div class="course-card">
+          <h2>Data Structures</h2>
+          <p>Master algorithms and problem solving.</p>
+        </div>
+        <div class="course-card">
+          <h2>Machine Learning</h2>
+          <p>Hands-on with models, sklearn, and deep learning.</p>
+        </div>
+        <div class="course-card">
+          <h2>Java Programming</h2>
+          <p>Build object-oriented applications and systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="content">
+      <h1>About Us</h1>
+      <p>CodeFlex is a platform dedicated to helping students and professionals master programming through high-quality content and hands-on practice.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="content contact-content">
+      <h1>Contact Us</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
