@@ -1,5 +1,4 @@
-// Add class to navbar on scroll
-window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
+window.addEventListener("scroll", function () {
+  const header = document.getElementById("navbar");
+  header.classList.toggle("scrolled", window.scrollY > 50);
 });
